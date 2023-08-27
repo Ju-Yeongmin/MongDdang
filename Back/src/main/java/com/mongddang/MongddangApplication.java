@@ -8,6 +8,12 @@ public class MongddangApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MongddangApplication.class, args);
+
+		// 주석
+		// 수정
+
 	}
+
+
 
 }
