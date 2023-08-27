@@ -8,6 +8,10 @@ public class MongddangApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MongddangApplication.class, args);
+		
+		
+		
+		// 나 이거 제일 마지막에
 	}
 
 }
