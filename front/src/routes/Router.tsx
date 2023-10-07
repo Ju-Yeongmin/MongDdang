@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { RoutePath } from "./RoutePath";
 import { lazy } from "react";
+import { AppLayout } from "src/layouts/AppLayout/AppLayout";
 
 const MainPage = lazy(() => import("src/pages/common/main"));
 const ChatPage = lazy(() => import("src/pages/common/chat"));
@@ -13,6 +14,7 @@ const SignUpPage = lazy(() => import("src/pages/auth/signup"));
 export const router = createBrowserRouter([
   {
     path: RoutePath.메인,
+    element: <AppLayout />,
     children: [
       {
         index: true,
