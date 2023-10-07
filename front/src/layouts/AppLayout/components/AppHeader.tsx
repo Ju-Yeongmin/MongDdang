@@ -1,7 +1,34 @@
-export const AppHeader = () => {
+import { ReactNode } from "react";
+
+interface AppHeaderProps {
+  isHeader: boolean;
+  leftIcon?: ReactNode;
+  rightItem?: string;
+  mainItem?: string;
+}
+
+export const AppHeader = ({
+  isHeader,
+  leftIcon,
+  rightItem,
+  mainItem,
+}: AppHeaderProps) => {
   return (
     <>
-      <div style={{ backgroundColor: "red", height: 60 }}>헤더인디용</div>
+      {isHeader && (
+        <div
+          style={{
+            backgroundColor: "white",
+            height: 60,
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+        >
+          <div>{leftIcon}</div>
+          <div>{mainItem}</div>
+          <div>{rightItem}</div>
+        </div>
+      )}
     </>
   );
 };
