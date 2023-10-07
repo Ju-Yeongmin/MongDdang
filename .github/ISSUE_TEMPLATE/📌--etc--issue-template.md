@@ -1,7 +1,7 @@
 ---
-name: "[BUG] Issue Template"
-about: 해당 Template으로 버그 관련 Isuue를 생성하세요.
-title: "[BUG] "
+name: "\U0001F4CC [ETC] Issue Template"
+about: 해당 Template으로 기타 Isuue를 생성하세요.
+title: "[ETC] "
 labels: ''
 assignees: ''
 
